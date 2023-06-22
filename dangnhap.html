@@ -6,37 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng nhập</title>
     <link rel="stylesheet" href="dangnhap.css" />
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <script
-    src="https://kit.fontawesome.com/2e872d1219.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/2e872d1219.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    
+    <div class="container">
+    <div class="box login-box">
     <form action="" id="form-1">
-      <div>
+      <div class="logo">
         <a href="trangchu.html"><img src="img/logo.png" alt="" /></a>
       </div>
-      <div>
+      <div class="input-box">
         <input type="text" placeholder="Tên đăng nhập" required />
       </div>
-      <div>
+      <div class="input-box">
         <input type="password" placeholder="Mật khẩu" required />
+      </div>
+      <div class="check">
+        
+        <label for="checkbox-remember">
+          <input class="remember-pass" id="checkbox-remember" type="checkbox" />Ghi nhớ mật khẩu</label>
+        <a href="quenmatkhau.html" id="forget-pass">Quên mật khẩu?</a>
       </div>
       <div>
         <button>Đăng nhập</button>
       </div>
       <div class="register">
-        <a class="register-button" href="dangky.html">Đăng ký tài khoản mới</a>
+        <p>Nếu bạn chưa có tài khoản: <a class="register-link" href="#">Đăng ký ngay?</a></p>
       </div>
-      <div><a href="quenmatkhau.html" id="forget-pass">Quên mật khẩu</a></div>
     </form>
-        <footer>
-      <p>
-        Liên hệ với chúng tôi qua Zalo: 0985636124 hoặc Email:
-        nguyentienluong2004@gmail.com
-      </p>
-    </footer>
+  </div>
+
+  <div class="box register-box">
+    <form action="" id="form-2">
+      <div class="logo">
+        <a href="trangchu.html"><img src="img/logo.png" alt="" /></a>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Tên đăng nhập" required />
+      </div>
+      <div class="input-box register-input-pass">
+        <input id="NewPassword" type="password" placeholder="Mật khẩu" required />
+        <div class="space"></div>
+        <input id="ConfirmPassword" type="password" placeholder="Xác nhận mật khẩu" required />
+      </div>
+
+      <div class="input-box register-input-email">
+<input type="" placeholder="email hoặc số điện thoại">          
+      </div>
+
+      <div class="check">
+        <label for="confirm">
+          <input class="remember-pass" id="confirm" type="checkbox" /><p>Tôi đồng ý với các <a href="#">Điều khoản</a></p></label>
+      </div>
+      <div class="register-button">
+        <button>Đăng ký</button>
+      </div>
+      <div class="register">
+        <p>Đã có tài khoản <a class="login-link" href="#">Đăng nhập ngay?</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="main.js">
+</script>
+
   </body>
 </html>
